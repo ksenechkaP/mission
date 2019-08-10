@@ -7,7 +7,9 @@
 }
 .agentsTable__header,
 .agentsTable__row {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 10% 10% auto 20%;
     grid-template-columns: 10% 10% auto 20%;
 }
 
