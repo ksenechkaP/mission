@@ -1,0 +1,40 @@
+
+.agentsTable {
+  font-size: 1.2em;
+  color: grey;
+  margin: 40px;
+  border: solid 1px lightGrey;
+}
+.agentsTable__header,
+.agentsTable__row {
+    display: grid;
+    grid-template-columns: 10% 10% auto 20%;
+}
+
+.agentsTable__row {
+  border-bottom: solid 1px lightGrey;
+}
+
+.agentsTable__header {
+  font-weight: bold;
+  border-bottom: solid 2px lightGrey;
+  background: rgba(0,0,0,0.01);
+
+  .agentsTable__cell {
+    border-right:solid 1px lightGrey;
+  }
+
+  .agentsTable__cell-last {
+    border-right: none;
+  }
+}
+
+.agentsTable__cell {
+  margin: 7px 10px;
+}
+
+.agentsTable__footer {
+  background: rgba(0,0,0,0.01);
+  text-align: right;
+  padding: 7px 10px;
+}

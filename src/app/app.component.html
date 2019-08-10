@@ -1,0 +1,35 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h2> Most isolated country is {{ isolatedCountry }}</h2>
+<div class="agentsTable">
+  <div class="agentsTable__header">
+    <div class="agentsTable__cell">
+      Agent's Id
+    </div>
+    <div class="agentsTable__cell">
+      Country
+    </div>
+    <div class="agentsTable__cell">
+      Address
+    </div>
+    <div class="agentsTable__cell agentsTable__cell-last">
+      Date
+    </div>
+  </div>
+  <div class="agentsTable__row" *ngFor="let item of sortedAgents">
+    <div class="agentsTable__cell">
+      {{item.agent}}
+    </div>
+    <div class="agentsTable__cell">
+      {{item.country}}
+    </div>
+    <div class="agentsTable__cell">
+      {{item.address}}
+    </div>
+    <div class="agentsTable__cell">
+      {{item.date}}
+    </div>
+  </div>
+  <div class="agentsTable__footer">
+    {{data.length}} missions
+  </div>
+</div>
